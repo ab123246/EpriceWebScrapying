@@ -21,12 +21,3 @@
 
 安裝：`pip install pandas beautifulsoup4 requests`
 
-## 使用
-
-```python
-from eprice_scraper import geteprice  # 假設檔名為 eprice_scraper.py
-
-df = geteprice(20190616)  # 抓取 2019-06-16 資料
-print(df.head())
-df.to_csv('forum_data.csv', index=False)
-```
