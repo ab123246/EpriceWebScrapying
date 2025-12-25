@@ -30,24 +30,3 @@ df = geteprice(20190616)  # 抓取 2019-06-16 資料
 print(df.head())
 df.to_csv('forum_data.csv', index=False)
 ```
-
-## 腳本分析
-
-- `getpages(URL)`：取得總頁數。
-- `get_mainpage(mainURL, totalpages)`：抓取所有頁面資料，跳過廣告。
-- `deldatesbyrecentreply(df, date)`：依最後回覆日期過濾。
-- `getlastcomment(URL, lastpage)`：抓最後回覆。
-- `getarticle(df)`：補充內容。
-- `geteprice(inputdate)`：主流程，輸出 DataFrame。
-
-## 限制與改進
-
-- 編碼固定 'big-5'，網站變更需調整。
-- 無延遲，建議加 `time.sleep()` 防封鎖。
-- 錯誤處理少，可加 try-except。
-- 內容截斷 100 字，可調整。
-- 未用函式如 `deldatesbyposttime` 可移除。
-
-## 授權
-
-MIT 授權，自由修改，負責使用。
