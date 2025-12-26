@@ -4,7 +4,6 @@
 
 從 [eprice.com.tw](https://www.eprice.com.tw/mobile/talk/4543/) 手機討論區擷取資料，包括貼文標題、連結、人氣、內容、發文時間等。依指定日期（最後回覆日期）過濾，並輸出 Pandas DataFrame。
 
-**注意：** 網路爬蟲可能違反網站條款，請先檢查 robots.txt 與法律規定。僅限教育或個人使用。
 
 ## 功能
 
@@ -19,5 +18,5 @@
 - Python 3.x
 - 套件：pandas, beautifulsoup4, requests
 
-安裝：`pip install pandas beautifulsoup4 requests`
+安裝：`pip install pandas beautifulsoup4`
 
